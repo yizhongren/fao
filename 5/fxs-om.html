@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/fxs-om.css"/>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script src="js/swiper.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li>
+					<span class="iconfont icon-back" style="font-size: 1.125rem;"></span>
+				</li>
+				<li style="font-size: 0.75rem;">
+					欧美文化的抽象美感
+				</li>
+				<li>
+					<span class="iconfont icon-nav"></span>
+					<p>导航</p>
+				</li>
+			</ul>
+		</header>
+		<div class="a"></div>
+		<img src="img/1.jpg"/>
+		<div class="swiper-container swiper1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><div class="div1"></div><p>卧室(3)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>书房(1)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>厨房(2)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>客厅(7)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>卫生间(3)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>餐厅(3)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>阳台(2)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>卧室(5)</p></div>
+				<div class="swiper-slide"><div class="div1"></div><p>卧室(1)</p></div>
+			</div>
+			<hr color="#39C893"/>
+		</div>
+	</body>
+	<script>
+		window.onresize = function() {
+			window.location.reload()
+		}
+		var widths = document.documentElement.clientWidth;
+		document.documentElement.style.fontSize = widths / 18 + "px"
+		
+		var myswiper=new Swiper(".swiper1",{
+			slidesPerView:5,
+			freeMode:true
+		})
+	</script>
+</html>
